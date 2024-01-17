@@ -1,0 +1,15 @@
+{
+  "banner": {
+    "title": "La moneda del viajero para descubrir la auténtica belleza de brasil."
+  },
+  "navbar": {
+    "Home": "Inicio",
+    "TourCoin": "Tour Coin",
+    "About": "Nosotros",
+    "Contact": "Contacto",
+    "Language": "Lenguaje",
+    "Spanish": "Español",
+    "English": "Ingles",
+    "Portuguese": "Portugués"
+  }
+}

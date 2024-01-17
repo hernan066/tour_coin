@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 20px;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.links {
+  display: flex;
+  font-family: "Unica One", sans-serif;
+  gap: 25px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.links li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+.links li,
+.menu_active ul li {
+  transition: all 0.3s;
+}
+.links li a:hover,
+.menu_active ul li a:hover {
+  color: #cdcdcd;
+  cursor: pointer;
+}
+.menu {
+  border-top: 1px solid #6a6a6a;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-family: "Unica One", sans-serif;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.menu_active {
+  border-top: 1px solid #6a6a6a;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  opacity: 100;
+  background-color: rgba(0, 0, 0, 0.15);
+  font-family: "Unica One", sans-serif;
+  transition: all 0.4s;
+  opacity: 100;
+}
+.menu_active ul {
+  display: flex;
+  color: var(--color-white);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.menu ul {
+  display: flex;
+  color: var(--color-white);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  display: none;
+}

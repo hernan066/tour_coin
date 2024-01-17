@@ -1,0 +1,15 @@
+{
+  "banner": {
+    "title": "A moeda do viajante para descobrir a beleza autêntica do Brasil."
+  },
+  "navbar": {
+    "Home": "Começar",
+    "TourCoin": "Tour Coin",
+    "About": "Sobre",
+    "Contact": "Contato",
+    "Language": "Linguagem",
+    "Spanish": "Espanhol",
+    "English": "Inglês",
+    "Portuguese": "Português"
+  }
+}

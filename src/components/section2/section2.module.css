@@ -1,0 +1,72 @@
+.container {
+  word-wrap: break-word;
+  box-sizing: inherit;
+  display: block;
+  text-rendering: geometricprecision;
+  background: #f6f6f6;
+  min-height: 100vh;
+  position: relative;
+  background-color: #eeeeee;
+}
+.bg_wrapper {
+  word-wrap: break-word;
+  box-sizing: inherit;
+  text-rendering: geometricprecision;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 0;
+  /* -webkit-mask-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%); */
+  clip: rect(auto, auto, auto, auto);
+  background: #eeeeee;
+}
+.bg {
+  word-wrap: break-word;
+  box-sizing: inherit;
+  text-rendering: geometricprecision;
+  top: 0;
+  bottom: 0;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  transition: opacity 0.5s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: auto;
+  pointer-events: none;
+  opacity: 0.8;
+  background-image: url("https://adellaporta.com/wp-content/uploads/2018/11/delight_for_homepage_bg.jpg");
+}
+
+.cards_container {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 20px;
+  gap: 50px;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+.card {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  width: 450px;
+  border-radius: 10px;
+  height: 380px;
+}
+.card h3 {
+  font-family: "Unica One", sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.card p {
+  line-height: 25px;
+}
