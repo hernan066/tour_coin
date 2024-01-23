@@ -1,72 +1,89 @@
 .container {
-  word-wrap: break-word;
-  box-sizing: inherit;
-  display: block;
-  text-rendering: geometricprecision;
-  background: #f6f6f6;
-  min-height: 100vh;
   position: relative;
-  background-color: #eeeeee;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
 }
-.bg_wrapper {
-  word-wrap: break-word;
-  box-sizing: inherit;
-  text-rendering: geometricprecision;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-  z-index: 0;
-  /* -webkit-mask-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%); */
-  clip: rect(auto, auto, auto, auto);
-  background: #eeeeee;
-}
-.bg {
-  word-wrap: break-word;
-  box-sizing: inherit;
-  text-rendering: geometricprecision;
-  top: 0;
-  bottom: 0;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
-  transition: opacity 0.5s;
-  position: fixed;
-  left: 0;
-  right: 0;
-  width: auto;
-  pointer-events: none;
-  opacity: 0.8;
-  background-image: url("https://adellaporta.com/wp-content/uploads/2018/11/delight_for_homepage_bg.jpg");
+.container h2 {
+  font-family: var(--font_4);
+  font-weight: 400;
+  font-size: 30px;
+
+  letter-spacing: 2px;
 }
 
 .cards_container {
   display: flex;
 
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 100px 20px;
-  gap: 50px;
-  height: 100vh;
-  position: relative;
-  z-index: 10;
-  width: 100%;
+}
+.card_animation {
+  flex: 1;
 }
 .card {
-  background-color: #fff;
-  padding: 40px;
   text-align: center;
-  width: 450px;
-  border-radius: 10px;
-  height: 380px;
+
+  min-height: 460px;
+  color: var(--color-black);
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 60px;
+}
+
+.card_title {
+  min-height: 460px;
+  color: var(--color-white2);
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black2);
+  /* padding: 20px 60px; */
+  position: relative;
+}
+.card_title h2 {
+  position: relative;
+  display: block;
 }
 .card h3 {
-  font-family: "Unica One", sans-serif;
+  font-family: var(--font_4);
+  font-weight: 400;
+  letter-spacing: 2px;
   font-size: 22px;
   margin-bottom: 30px;
+  margin-top: 20px;
+}
+.card_title h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--color-primary);
+  height: 2px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .card p {
-  line-height: 25px;
+  line-height: 22px;
+}
+
+@media (max-width: 768px) {
+  .cards_container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 574px) {
+  .container {
+    padding: 50px 20px;
+    padding-bottom: 30px;
+  }
+  .card {
+    padding: 20px 10px;
+  }
 }

@@ -1,38 +1,75 @@
+"use client";
 import styles from "./section1.module.css";
+import { motion } from "framer-motion";
 
-export const Section1 = () => {
+export const scrollAnimateUp = {
+  initial: { opacity: 0, y: 50 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 2,
+    },
+  },
+};
+
+export const Section1 = ({ translations }) => {
+  const { title1, title2, text_1_1, text_1_2, text_2_1, text_2_2, button } =
+    translations;
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="tour_coin">
+      <div className={styles.img}>
+        <div className={styles.img_cover}></div>
+        <div className={styles.bg}></div>
+      </div>
       <div className={styles.wrapper}>
-        <h2>¿Qué es un Tour Coin?</h2>
-        <p>
-          <strong>Tour coin</strong> es un token, que como un instrumento
-          financiero que tiene valor y puede ser tradeado. Este fue emitido en
-          una blockchain, mas específicamente en la red de Bnb. Cada token
-          representa una participación en nuestra compañía o activo externos.
-          Las ventajas de este planteamiento son numerosos.
-        </p>
+        <motion.h2
+          initial={"initial"}
+          whileInView={"animate"}
+          viewport={{ amount: 0.2, once: true }}
+          variants={scrollAnimateUp}
+        >
+          {title1}
+        </motion.h2>
+        <motion.div
+          initial={"initial"}
+          whileInView={"animate"}
+          viewport={{ amount: 0.2, once: true }}
+          variants={scrollAnimateUp}
+        >
+          <p>{text_1_1}</p>
 
-        <p>
-          Como ocurre con las criptomonedas, los tokens se benefician de las
-          propiedades de la blockchain en que se emiten. Entre dichas
-          propiedades figuran la transparencia, una rápida liquidación
-          (settlement), ausencia de tiempos de inactividad y la divisibilidad.
-        </p>
-        <h2 style={{ marginTop: "100px" }}>¿Que ofrecen nuestros tokens?</h2>
-        <p>
-          Invertir en <strong>Tour coin</strong> emitidos por nuestra empresa
-          centrada en turismo, departamentos, servicios a turistas y bares en
-          Celso Ramos, Brasil, ofrece varias ventajas significativas para los
-          inversores.
-        </p>
+          <p>{text_1_2}</p>
+        </motion.div>
+        <motion.h2
+          style={{ marginTop: "100px" }}
+          initial={"initial"}
+          whileInView={"animate"}
+          viewport={{ amount: 0.2, once: true }}
+          variants={scrollAnimateUp}
+        >
+          {title2}
+        </motion.h2>
+        <motion.div
+          initial={"initial"}
+          whileInView={"animate"}
+          viewport={{ amount: 0.2, once: true }}
+          variants={scrollAnimateUp}
+        >
+          <p>{text_2_1}</p>
+          <p>{text_2_2}</p>
+        </motion.div>
 
-        <p>
-          Esta inversion ofrece una oportunidad única para participar en el
-          próspero sector turístico, aprovechando las ventajas de la tecnología
-          blockchain y la tokenización de activos para mejorar la accesibilidad,
-          transparencia y eficiencia en las transacciones financieras.
-        </p>
+        <motion.button
+          initial={"initial"}
+          whileInView={"animate"}
+          viewport={{ amount: 0.2, once: true }}
+          variants={scrollAnimateUp}
+        >
+          {button}
+        </motion.button>
       </div>
     </section>
   );

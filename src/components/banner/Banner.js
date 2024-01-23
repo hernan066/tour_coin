@@ -1,8 +1,18 @@
-import { useTranslations } from "next-intl";
-import styles from "./banner.module.css";
+"use client";
 
-export const Banner = () => {
-  const t = useTranslations("banner");
+import styles from "./banner.module.css";
+import { motion } from "framer-motion";
+
+const menuAnimate = {
+  initial: { opacity: 0, y: -50 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1 },
+  },
+};
+
+export const Banner = ({ title, button }) => {
   return (
     <section className={styles.banner_section} id="home">
       <div className={styles.banner_bg}>
@@ -22,10 +32,16 @@ export const Banner = () => {
       </div>
       <div></div>
 
-      <div className={styles.banner_title}>
-        <h1>Tour Coin</h1>
-        <h6>{t("title")}</h6>
-      </div>
+      <motion.div
+        className={styles.banner_title}
+        initial={"initial"}
+        animate={"animate"}
+        transition={{ staggerChildren: 0.2, delayChildren: 0.5 }}
+      >
+        <motion.h1 variants={menuAnimate}>Tour Coin</motion.h1>
+        <motion.h6 variants={menuAnimate}>{title}</motion.h6>
+        <motion.button variants={menuAnimate}>{button}</motion.button>
+      </motion.div>
 
       <span className={styles.txt}>Scroll Down</span>
     </section>

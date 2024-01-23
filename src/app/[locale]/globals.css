@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&family=Teko:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap");
 :root {
   --color-white: #f1f1f1;
+  --color-white2: #f8f8fa;
+  --color-white3: #fff;
   --color-black: #303030;
-  --color-primary: #1b8fdc;
+  --color-black2: #24262b;
+  --color-primary: #1781a8;
+  --color-secondary: #1781a8;
+
+  --font_1: "Unica One", cursive;
+  --font_2: "Anton", sans-serif;
+  --font_3: "Roboto", sans-serif;
+  --font_4: "Oswald", sans-serif;
 }
 
 * {
@@ -17,6 +27,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--color-white);
+  position: relative;
+  z-index: -1;
+}
+html {
+  scroll-behavior: smooth;
 }
 ul {
   list-style: none;

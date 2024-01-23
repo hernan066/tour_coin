@@ -1,15 +1,76 @@
 {
   "banner": {
-    "title": "The traveler's currency to discover the authentic beauty of Brazil."
+    "title": "The traveler's currency to discover the authentic beauty of Brazil.",
+    "button": "Buy"
   },
   "navbar": {
     "Home": "Home",
     "TourCoin": "Tour Coin",
+    "Actives": "Actives",
     "About": "About",
-    "Contact": "Contact",
     "Language": "Language",
     "Spanish": "Spanish",
     "English": "English",
-    "Portuguese": "Portuguese"
+    "Portuguese": "Portuguese",
+    "back": "Back"
+  },
+  "section_1": {
+    "title_1": "What is a Tour Coin?",
+    "title_2": "What do our tokens offer?",
+    "text_1_1": "Tour coin is a token, which as a financial instrument that has value and can be traded. This was issued on a blockchain, more specifically on the Bnb network. Each token represents a share in our external company or asset. The advantages of this approach are numerous.",
+    "text_1_2": "Just as with cryptocurrencies, tokens benefit from the properties of the blockchain on which they are issued. Among these properties are transparency, quick settlement, absence of downtime, and divisibility.",
+    "text_2_1": "Investing in Tour coins issued by our tourism-focused company, which includes properties, tourist services, and bars in Celso Ramos, Brazil, offers several significant advantages for investors.",
+    "text_2_2": "This investment provides a unique opportunity to participate in the thriving tourism sector, leveraging the advantages of blockchain technology and asset tokenization to enhance accessibility, transparency, and efficiency in financial transactions.",
+    "button": "Buy"
+  },
+  "section_2": {
+    "advantages": "Advantages",
+    "card_1": {
+      "title": "Tokenization of Tangible Assets",
+      "text": "Our company tokenizes tangible assets such as properties, tourist services, and commercial establishments. This allows investors to access investments in the thriving tourism sector in Celso Ramos, Brazil, in a more accessible and diversified manner."
+    },
+    "card_2": {
+      "title": "Transparency",
+      "text": "Security tokens are issued on a blockchain, providing a public ledger. This ensures transparency in the management of tokens and allows investors to easily audit transactions and issuance of shares."
+    },
+    "card_3": {
+      "title": "Rapid Settlement",
+      "text": "The blockchain facilitates quick and efficient settlement of transactions. Automated clearing and settlement enable the completion of operations within minutes, eliminating the traditional downtime associated with conventional financial markets."
+    },
+    "card_4": {
+      "title": "Continuous Availability",
+      "text": "Unlike traditional financial markets that operate at specific times, tokenized assets are available for trading 24 hours a day, 7 days a week. This provides flexibility for investors to participate in the market at any time."
+    },
+    "card_5": {
+      "title": "Divisibility",
+      "text": "Tokenization allows for the divisibility of high-value assets, such as properties. This means investors can own fractions of assets that would otherwise be inaccessible. For example, a $5 million property could be tokenized into affordable units, making the investment more accessible and granular."
+    },
+    "card_6": {
+      "title": "Voting Rights and Dividends",
+      "text": "Our security tokens can be designed to grant investors voting rights and dividends, similar to common shares. This gives investors an active role in business decisions and potential regular income streams."
+    }
+  },
+  "section_4": {
+    "title": "Our Assets",
+    "active_1": "Apartments",
+    "active_2": "Gastronomy",
+    "active_3": "Excursions"
+  },
+  "section_3": {
+    "title": "Who We Are",
+    "text": "We are a company dedicated to providing unforgettable experiences in the field of tourism and entertainment. We stand out for offering a wide range of services, including quality accommodations, exciting water games, and diversified entertainment programs. We work with passion to become the preferred destination for those seeking adventure, fun, and comfort. Our mission is to create lasting memories for our clients by offering cozy accommodation facilities, exciting water games, and quality entertainment."
+  },
+  "footer": {
+    "title_1": "Company",
+    "title_2": "Contact Us",
+    "title_3": "Get Token",
+    "title_4": "Follow Us",
+    "link_1": "Tour Coin",
+    "link_2": "Our Services",
+    "link_3": "About Us",
+    "link_4": "FAQ",
+    "link_5": "Email",
+    "link_6": "WhatsApp",
+    "link_7": "Telegram"
   }
 }

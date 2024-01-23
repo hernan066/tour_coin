@@ -1,15 +1,22 @@
 .banner_section {
-  height: 100vh;
+  height: 89vh;
   color: var(--color-white);
+  position: relative;
+  margin: 0 50px;
+  margin-top: 50px;
 }
 .banner_bg {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
   z-index: -1;
   overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .video_bg {
   width: 100vw;
@@ -22,6 +29,10 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .txt {
   -webkit-transform-origin: 100% 100%;
@@ -31,7 +42,7 @@
   bottom: 80px;
   font-size: 18px;
   font-weight: 400;
-  right: 15px;
+  right: 65px;
   padding-right: 30px;
   letter-spacing: 0.6px;
   -webkit-transform: rotate(-90deg) translate(100%);
@@ -53,23 +64,37 @@
 
 .banner_title {
   position: absolute;
-  left: 40px;
-  bottom: 140px;
+  left: 120px;
+  bottom: 120px;
   max-width: 700px;
 }
 .banner_title h1 {
-  font-size: 220px;
-  font-family: "Anton", sans-serif;
+  font-size: clamp(5rem, 2.5rem + 12.5vw, 13.75rem);
   font-family: "Teko", sans-serif;
   letter-spacing: 4px;
-  line-height: 180px;
+  line-height: clamp(6.25rem, 4.821rem + 7.143vw, 11.25rem);
   text-shadow: 1px 1px 2px #747474, -1px -1px 2px #747474;
 }
 .banner_title h6 {
-  font-size: 25px;
+  font-size: clamp(1.063rem, 0.731rem + 0.924vw, 1.563rem);
   font-weight: 400;
   letter-spacing: 2px;
   font-family: "Roboto", sans-serif;
+}
+.banner_title button {
+  background-color: transparent;
+  color: var(--color-white);
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 25px;
+  border: none;
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.banner_title button:hover {
+  border: 2px solid var(--color-white);
 }
 
 @keyframes scrollDown {
@@ -89,7 +114,30 @@
   }
 }
 @media (min-width: 768px) {
+  .banner_section {
+    height: 100vh;
+    margin: 0 0px;
+    margin-top: 0px;
+  }
   .txt {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .banner_bg {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+  }
+
+  .banner_section {
+    height: 100vh;
+    margin: 0 0px;
+    margin-top: 0px;
+  }
+  .banner_title {
+    left: 20px;
+    right: 20px;
   }
 }

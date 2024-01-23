@@ -1,15 +1,77 @@
 {
   "banner": {
-    "title": "La moneda del viajero para descubrir la auténtica belleza de brasil."
+    "title": "La moneda del viajero para descubrir la auténtica belleza de brasil.",
+    "button": "Comprar"
   },
   "navbar": {
     "Home": "Inicio",
     "TourCoin": "Tour Coin",
     "About": "Nosotros",
-    "Contact": "Contacto",
+    "Actives": "Activos",
     "Language": "Lenguaje",
     "Spanish": "Español",
     "English": "Ingles",
-    "Portuguese": "Portugués"
+    "Portuguese": "Portugués",
+    "back": "Volver"
+  },
+  "section_1": {
+    "title_1": "¿Qué es un Tour Coin?",
+    "title_2": "¿Que ofrecen nuestros tokens?",
+    "text_1_1": "Tour coin es un token, que como un instrumento financiero que tiene valor y puede ser tradeado. Este fue emitido en una blockchain, mas específicamente en la red de Bnb. Cada token representa una participación en nuestra compañía o activo externos. Las ventajas de este planteamiento son numerosos.?",
+    "text_1_2": "Como ocurre con las criptomonedas, los tokens se benefician de las propiedades de la blockchain en que se emiten. Entre dichas propiedades figuran la transparencia, una rápida liquidación (settlement), ausencia de tiempos de inactividad y la divisibilidad.",
+    "text_2_1": "Invertir en Tour coin emitidos por nuestra empresa centrada en turismo, departamentos, servicios a turistas y bares en Celso Ramos, Brasil, ofrece varias ventajas significativas para los inversores.",
+    "text_2_2": "Esta inversion ofrece una oportunidad única para participar en el próspero sector turístico, aprovechando las ventajas de la tecnología blockchain y la tokenización de activos para mejorar la accesibilidad, transparencia y eficiencia en las transacciones financieras.",
+    "button": "Comprar"
+  },
+
+  "section_2": {
+    "advantages": "Ventajas",
+    "card_1": {
+      "title": "Tokenización de Bienes Tangibles",
+      "text": "Nuestra empresa tokeniza bienes tangibles como propiedades, servicios turísticos y establecimientos comerciales. Esto permite a los inversores acceder a inversiones en el próspero sector turístico en Celso Ramos, Brasil, de manera más accesible y diversificada."
+    },
+    "card_2": {
+      "title": "Transparencia",
+      "text": "Los tokens de seguridad se emiten en una cadena de bloques, proporcionando un libro de contabilidad público. Esto asegura transparencia en la gestión de tokens y permite a los inversores auditar fácilmente transacciones y emisiones de acciones."
+    },
+    "card_3": {
+      "title": "Liquidación Rápida",
+      "text": "La cadena de bloques facilita una liquidación rápida y eficiente de transacciones. El despeje y liquidación automatizados permiten la finalización de operaciones en minutos, eliminando el tiempo de inactividad tradicional asociado con los mercados financieros convencionales."
+    },
+    "card_4": {
+      "title": "Disponibilidad Continua",
+      "text": "A diferencia de los mercados financieros tradicionales que operan en momentos específicos, los activos tokenizados están disponibles para el comercio las 24 horas del día, los 7 días de la semana. Esto proporciona flexibilidad para que los inversores participen en el mercado en cualquier momento."
+    },
+    "card_5": {
+      "title": "Divisibilidad",
+      "text": "La tokenización permite la divisibilidad de activos de alto valor, como propiedades. Esto significa que los inversores pueden poseer fracciones de activos que de otra manera serían inaccesibles. Por ejemplo, una propiedad de $5 millones podría tokenizarse en unidades asequibles, haciendo la inversión más accesible y granular."
+    },
+    "card_6": {
+      "title": "Derechos de Votación y Dividendos",
+      "text": "Nuestros tokens de seguridad pueden diseñarse para otorgar a los inversores derechos de voto y dividendos, similares a las acciones comunes. Esto brinda a los inversores un papel activo en las decisiones empresariales y posibles flujos de ingresos regulares."
+    }
+  },
+  "section_4": {
+    "title": "Nuestros activos",
+    "active_1": "departamentos",
+    "active_2": "gastronomía",
+    "active_3": "excursiones"
+  },
+  "section_3": {
+    "title": "Quienes somos",
+    "text": "Somos una empresa dedicada a proporcionar experiencias inolvidables en el ámbito del turismo y el entretenimiento. Nos destacamos por ofrecer una amplia gama de servicios que incluyen hospedajes de calidad, emocionantes juegos acuáticos y programas de entretenimiento diversificados. Trabajamos con pasión para convertirnos en el destino preferido de aquellos que buscan aventura, diversión y comodidad. Nuestra misión es crear recuerdos duraderos para nuestros clientes, ofreciendo instalaciones de hospedaje acogedoras, emocionantes juegos acuáticos y entretenimiento de calidad."
+  },
+  "footer": {
+    "title_1": "La empresa",
+    "title_2": "Contacto",
+    "title_3": "Comprar token",
+    "title_4": "Síguenos",
+    "link_1": "Tour Coin",
+    "link_2": "Activos",
+    "link_3": "Nosotros",
+    "link_4": "FAQ",
+    "link_5": "Email",
+    "link_6": "WhatsApp",
+    "link_7": "Telegram"
   }
 }

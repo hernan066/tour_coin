@@ -1,22 +1,83 @@
 .container {
   min-height: 92vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 50px;
+  padding: 80px 50px;
   background-color: var(--color-white);
   color: var(--color-black);
 }
+.img {
+  width: 50%;
+  position: relative;
+}
+.img_cover {
+  background-color: var(--color-primary);
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+.bg {
+  background-image: url("https://ik.imagekit.io/mrprwema7/Tour%20Coin/PhotoReal_A_person_riding_a_jet_ski_in_the_ocean_0%20(1)_AmK9LgWpD.jpg?updatedAt=1705774785545");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
 .wrapper {
-  margin-top: 100px;
   text-align: center;
   max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 20px 70px;
 }
 .wrapper h2 {
-  margin: 30px 0;
-  font-family: "Unica One", sans-serif;
+  margin: 20px 0;
+  font-family: var(--font_4);
+  font-weight: 400;
   font-size: 30px;
 }
 .wrapper p {
   font-size: 17px;
-  line-height: 30px;
+  line-height: 25px;
+}
+
+.wrapper button {
+  background-color: transparent;
+  color: var(--color-primary);
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 50px;
+  border: none;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.wrapper button:hover {
+  border: 2px solid var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .img {
+    display: none;
+  }
+}
+
+@media (max-width: 574px) {
+  .container {
+    padding: 50px 20px;
+  }
+  .wrapper {
+    padding: 0px 0px;
+  }
 }
