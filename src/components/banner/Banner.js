@@ -22,7 +22,7 @@ export const Banner = ({ title, button }) => {
           /* controls */
           loop
           muted
-          preload
+          preload="true"
         >
           <source
             type="video/mp4"

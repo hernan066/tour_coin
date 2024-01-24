@@ -33,6 +33,22 @@
   overflow: hidden;
   height: 700px;
 }
+.img_wrapper img {
+  position: relative;
+  left: -150px;
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 50px 20px;
+  }
+  .left {
+    padding: 100px 50px;
+  }
+  .img_wrapper img {
+    position: relative;
+    left: -350px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {

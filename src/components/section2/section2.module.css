@@ -87,3 +87,19 @@
     padding: 20px 10px;
   }
 }
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 50px 20px;
+  }
+  .card p {
+    line-height: 18px;
+    font-size: 15px;
+  }
+  .card {
+    min-height: 480px;
+  }
+  .card_title {
+    min-height: 480px;
+  }
+}

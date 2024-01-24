@@ -133,7 +133,7 @@
   justify-content: center;
 }
 .menu_mobile_links li {
-  font-size: 60px;
+  font-size: 45px;
   margin-bottom: 20px;
   font-family: var(--font_4);
   letter-spacing: 2px;
@@ -148,6 +148,28 @@
   color: var(--color-white);
   z-index: 999999;
 }
+@media (max-width: 1280px) {
+  .navbar {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 70px;
+  }
+  .menu {
+    top: 90px;
+    left: 20px;
+    right: 20px;
+    height: 0;
+  }
+  .menu_active {
+    top: 90px;
+    left: 20px;
+    right: 20px;
+    height: 45px;
+    opacity: 100;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     position: fixed;

@@ -9,6 +9,10 @@
 .img {
   width: 50%;
   position: relative;
+  overflow: hidden;
+}
+.img video {
+  width: 100%;
 }
 .img_cover {
   background-color: var(--color-primary);
@@ -21,12 +25,11 @@
   right: 0%;
 }
 .bg {
-  background-image: url("https://ik.imagekit.io/mrprwema7/Tour%20Coin/PhotoReal_A_person_riding_a_jet_ski_in_the_ocean_0%20(1)_AmK9LgWpD.jpg?updatedAt=1705774785545");
-  background-position: center;
+  background-image: url("https://ik.imagekit.io/mrprwema7/Tour%20Coin/New%20Project_Ra711Jkec.jpg?updatedAt=1706059083413");
   background-repeat: no-repeat;
-
+  background-position-y: center;
   position: absolute;
-  top: 0%;
+  top: 0px;
   bottom: 0%;
   left: 0%;
   right: 0%;
@@ -39,6 +42,7 @@
   justify-items: center;
   flex-direction: column;
   padding: 20px 70px;
+  width: 50%;
 }
 .wrapper h2 {
   margin: 20px 0;
@@ -66,10 +70,21 @@
 .wrapper button:hover {
   border: 2px solid var(--color-primary);
 }
+@media (max-width: 1280px) {
+  .container {
+    padding: 50px 20px;
+  }
+  .text_2 {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   .img {
     display: none;
+  }
+  .wrapper {
+    width: 100%;
   }
 }
 
@@ -79,5 +94,8 @@
   }
   .wrapper {
     padding: 0px 0px;
+  }
+  .text_2 {
+    display: block;
   }
 }

@@ -46,7 +46,6 @@ export const Section3 = ({ translations }) => {
         <div className={styles.right}>
           <div className={styles.img_wrapper}>
             <img
-              style={{ position: "relative", left: "-180px" }}
               src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/EMPRESAS_oNBzCBds5O.png?updatedAt=1705779560595"
               alt="Beach Celso Ramos"
             />

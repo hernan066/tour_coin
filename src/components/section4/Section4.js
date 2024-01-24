@@ -56,7 +56,6 @@ export const Section4 = ({ translations }) => {
             </motion.h4>
             <div className={styles.img_container}>
               <img
-                style={{ position: "relative", left: "-250px" }}
                 src="https://www.abasturhub.com/img/blog/mejores-restaurantes---diseno-sin-titulo.jpg"
                 alt="imagen"
               />

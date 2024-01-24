@@ -52,6 +52,11 @@
 .img_container img {
   height: 100%;
 }
+@media (max-width: 1280px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .container {
